@@ -14,10 +14,6 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 public class Main {
     public static void main(String[] args) {
 
-
-        // CHECKING
-
-
 //        UserRepositoryImplHibernate uri = new UserRepositoryImplHibernate();
 //
 //        Card card = new Card();
@@ -43,6 +39,7 @@ public class Main {
 //        uri.addUser(user);
 //        User userDB = uri.getById(9);
 //        System.out.println(userDB);
+
         System.out.println(0);
         ApplicationContext applicationContext = new ClassPathXmlApplicationContext("application-context.xml");
         System.out.println(1);
