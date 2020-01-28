@@ -13,6 +13,11 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 public class Main {
     public static void main(String[] args) {
+
+
+        // CHECKING
+
+
 //        UserRepositoryImplHibernate uri = new UserRepositoryImplHibernate();
 //
 //        Card card = new Card();
