@@ -4,6 +4,7 @@
          xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
          version="4.0">
 
+<!--
 
     <welcome-file-list>
         <welcome-file>start</welcome-file>
@@ -55,6 +56,7 @@
         <url-pattern>/start</url-pattern>
     </servlet-mapping>
 
+
     <filter>
         <filter-name>Authentication</filter-name>
         <filter-class>am.basic.web.controller.Authentication</filter-class>
@@ -63,6 +65,27 @@
         <filter-name>Authentication</filter-name>
         <url-pattern>/secure/*</url-pattern>
     </filter-mapping>
+    -->
 
+    <servlet>
+        <servlet-name>dispatcher</servlet-name>
+        <servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
+        <init-param>
+            <param-name>contextConfigLocation</param-name>
+            <param-value>classpath:dispatcher-servlet.xml</param-value>
+        </init-param>
+        <load-on-startup>1</load-on-startup>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>dispatcher</servlet-name>
+        <url-pattern>/</url-pattern>
+    </servlet-mapping>
+    <context-param>
+        <param-name>contextConfigLocation</param-name>
+        <param-value>classpath:dispatcher-servlet.xml</param-value>
+    </context-param>
+    <listener>
+        <listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
+    </listener>
 
 </web-app>

@@ -12,7 +12,7 @@
 </head>
 <body>
 
-<p><a href="/secure/profile.jsp">Profile</a></p>
+<p><a href="/pages/profile.jsp">Profile</a></p>
 <p><a href="/secure/logout">Logout</a></p>
 </body>
 </html>

@@ -61,6 +61,6 @@
     <input type="submit" value="Register"/>
 
 </form>
-<button onclick="window.location.href = '/';">Back to Login</button>
+<button onclick="window.location.href = '..';">Back to Login</button>
 </body>
 </html>
